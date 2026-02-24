@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Download My App</title>
+    <title>ft.Meghanath</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #e6e6e6, #d9d9d9);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .card {
+            background: #f5f5f5;
+            padding: 60px 80px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 25px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .version {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 35px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 45px;
+            background: #1f1f1f;
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: #000;
+        }
+    </style>
 </head>
-<body style="text-align:center; margin-top:100px; font-family:Arial;">
-    <h1>Download My App</h1>
-    <p>Click below to download</p>
-    <a href="https://www.mediafire.com/file/4094gl5aih0v39h/base.apk/file">
-        <button style="padding:15px 30px; font-size:18px;">
-            Download APK
-        </button>
+
+<body>
+
+<div class="card">
+
+    <img src="logo.png" class="logo">
+
+    <div class="title">ft.Meghanath</div>
+    <div class="version">Capcut Pro 20.06.2 ⬇</div>
+
+    <a href="https://www.mediafire.com/file/4094gl5aih0v39h/base.apk/file"
+       class="download-btn">
+        Download
     </a>
+
+</div>
+
 </body>
 </html>
